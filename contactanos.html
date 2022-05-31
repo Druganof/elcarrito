@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="carrito.css">
+    <script src="https://kit.fontawesome.com/b499354974.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedorgrid">
+    <header class="barranav">
+        <div class="logo">
+            <a href="home.html"><img src="img/instadp_el_carrito_de_ing_2020_full_size-removebg-preview.png"  title="logo" width="200" height="100" ></a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul class="topnav">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                    <li><a class="active" href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h2>Donde nos encontramos</h2>
+        <p>Nos encontramos en el barrio de Ingeniero Budge en donde pueden probar nuestros productos</p>
+        <p>Nuestro telefono es: <strong>+54 9 11 3067-3738</strong></p>
+        <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d650.7724310156295!2d-58.4531837517083!3d-34.71306476867255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccc2dde895493%3A0xa85c07f6ec4d9629!2sPizzeria%20Y%20Rotiseria%20El%20Carrito!5e0!3m2!1ses!2sar!4v1648066675550!5m2!1ses!2sar" width="400" height="350 " style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+        </div>
+    </main>
+    
+    <section class="imagenes">
+        <h2>Contactanos!</h2>
+        <p>En Pizzeria y Rotiseria El Carrito nos interesa su opinion sobre nuestros productos y somos abiertos a cualquier consulta o duda!</p>
+        <form action="" name="formulario" id="formulario" method="get">   
+                <!-- <label for="nombre"></label> --> Nombre: <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"> 
+                <br>
+                <!--<label for="apellido"></label>--> Apellido: <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                <br>
+                <!--<label for="telefono"></label>-->Telefono: <input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+                <br>
+                <!--<label for="email"></label>-->Email: <input type="email" name="email" id="email" placeholder="Ingrese su Email" >
+                <br>
+                <!--<label for="Texto"></label>-->Comentarios: <br><textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" id="enviar" name="enviar" value="Enviar">
+                <!-- <input type="reset" id="borrar" name="borrar" value="Borrar"> -->
+        </form>
+    </section>
+    <footer class="footer">
+        <a href="https://www.instagram.com/el_carrito_de_ing_2020/?hl=es-la" title="instagram" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 36px; color: red;"></i></a>@el_carrito_de_ing_2020<br>
+        <a href="https://api.whatsapp.com/send/?phone=%2B5491130673738&text&app_absent=0" title="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp" title="whatsapp" style="font-size: 36px; color: red;"></i></a>+54 9 11 3067-3738
+        <p style="color: black">Derechos Reservados @2022 Fernando Chiappero comisión #22085 </p>
+    </footer>
+</div>
+<script>
+    document.getElementById("formulario").addEventListener('submit',validarFormulario);
+
+function validarFormulario(evento) {
+    evento.preventDefault();
+    var nombre = document.getElementById('nombre');
+    if(nombre.value.length == 0) {
+        alert('Completa el campo Nombre');
+        return;
+    }
+    if(apellido.value.length == 0) {
+        alert('Completa el campo Apellido');
+        return;
+    }
+    if(telefono.value.length == 0) {
+        alert('Completa el campo Teléfono');
+        return;
+    }
+    if(email.value.length == 0) {
+        alert('Completa el campo Email');
+        return;
+    }
+   
+    this.submit();
+}
+</script>
+</body>
+</html>
